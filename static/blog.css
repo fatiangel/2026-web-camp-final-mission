@@ -59,10 +59,67 @@
   color: var(--color-neutral-700);
 }
 
+.card-header {
+  flex-shrink: 0;
+  width: 200px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin: auto 0;
+}
+
+/* 分頁元件 */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 40px;
+}
+
+.page-item {
+  display: flex;
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  color: var(--color-neutral-700);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.page-link:hover {
+  background-color: var(--color-primary-100);
+}
+
+.page-item.active .page-link {
+  background-color: var(--color-primary-900);
+  color: var(--color-neutral-0);
+}
+
+.page-item.ellipsis .page-link {
+  cursor: default;
+}
+
+.page-item.ellipsis .page-link:hover {
+  background-color: transparent;
 }
