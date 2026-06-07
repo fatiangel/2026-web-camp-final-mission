@@ -74,7 +74,7 @@ a {
 /* Heading - font-weight: 700 */
 
 .heading-xxxl {
-  font-size: 80px;
+  font-size: clamp(2.5rem, 1.893rem + 2.589vw, 5rem);
   font-weight: 700;
   line-height: 1.2;
 }

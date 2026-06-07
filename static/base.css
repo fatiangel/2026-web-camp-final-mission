@@ -966,4 +966,22 @@ a {
   .project-content {
     max-width: none;
   }
+
+  /* Subscription 圖片在手機版固定高度，讓 object-fit:cover 正常裁切 */
+  .subscriptions .col-5 {
+    height: 240px;
+  }
+
+  /* 手機版讓 subscription 內容頂到邊緣：
+     把 container padding 歸零，並取消 mx-md--12 負 margin（避免超出 container 的 scrollWidth 問題）
+     文字區塊靠 px-md-12 自行補回 12px 左右 padding */
+  .subscriptions .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .subscriptions .mx-md--12 {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
