@@ -1,6 +1,28 @@
-/* 全域通用設定 */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* Blog 卡片（首頁 Blogs 區塊） */
+
+.blog-card {
+  min-width: 260px;
+}
+
+.blog-card img {
+  width: 100%;
+  aspect-ratio: 416 / 240;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* 聯絡表單輸入框（footer 兩欄並排） */
+
+.contact-input-half {
+  width: calc(50% - 12px);
+}
+
+@media (max-width: 992px) {
+  .contact-input-half {
+    width: 100%;
+  }
+
+  .w-md-full {
+    width: 100%;
+  }
 }

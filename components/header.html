@@ -1,31 +1,39 @@
-    <!-- 頁首區塊 -->
-    <header class="sticky-top z-index-1">
-      <nav class="main-nav">
-        <div class="container">
-          <div class="col-12">
-            <div class="d-flex flex-wrap align-items-center">
-              <!-- 網站標誌（logo） -->
-              <a class="logo" href="#">
-                <img
-                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-pc.svg"
-                  alt="網站標誌 Nelson"
-                />
-              </a>
+<!-- 手機版選單遮罩 -->
+<div class="mask z-index-1"></div>
+<!-- 頁首區塊 -->
+<header class="sticky-top z-index-1">
+  <nav class="main-nav">
+    <div class="container">
+      <div class="col-12">
+        <div class="d-flex flex-wrap align-items-center">
+          <!-- 網站標誌（logo） -->
+          <a class="logo" href="#">
+            <picture>
+              <source
+                srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-mobile.svg"
+                media="(max-width: 375px)"
+              />
+              <img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-pc.svg"
+                alt="網站標誌 Nelson"
+              />
+            </picture>
+          </a>
 
-              <!-- 行動版選單按鈕（漢堡按鈕） -->
-              <button class="btn-menu ml-auto" type="button">
-                <span class="material-symbols-outlined">dehaze</span>
-              </button>
+          <!-- 行動版選單按鈕（漢堡按鈕） -->
+          <button class="btn-menu ml-auto" type="button">
+            <span class="material-symbols-outlined">dehaze</span>
+          </button>
 
-              <!-- 主導覽選單 -->
-              <ul class="nav-list label-md d-flex gap-24 ml-auto">
-                <li><a class="nav-link" href="#">服務項目</a></li>
-                <li><a class="nav-link" href="#">專案作品</a></li>
-                <li><a class="nav-link" href="#">部落格</a></li>
-                <li><a class="nav-link" href="#">與我聯絡</a></li>
-              </ul>
-            </div>
-          </div>
+          <!-- 主導覽選單 -->
+          <ul class="nav-list label-md label-mobile-sm d-flex gap-24 ml-auto gap-md-12">
+            <li><a class="nav-link" href="#">服務項目</a></li>
+            <li><a class="nav-link" href="#">專案作品</a></li>
+            <li><a class="nav-link" href="#">部落格</a></li>
+            <li><a class="nav-link" href="#">與我聯絡</a></li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
+</header>
