@@ -1,0 +1,96 @@
+/* header 導覽列 */
+
+.main-nav {
+  background-color: var(--color-primary-50);
+  /* ✨✨✨ 讓導覽列一直保持在上方 */
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  padding: 12px 0;
+}
+
+.nav-list {
+  color: var(--color-neutral-700);
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 4px 12px;
+}
+
+.btn-menu {
+  display: none; /* 預設隱藏（桌機版不顯示） */
+  border: 0;
+  padding: 12px;
+  background: transparent; /* 移除按鈕預設背景 */
+  color: inherit; /* 繼承父層文字顏色 */
+  font: inherit; /* 繼承父層字型設定 */
+  cursor: pointer; /* 滑鼠移入時顯示手型游標 */
+}
+
+/* 頁面內容佔位區塊，用於模擬實際內容高度 */
+.placeholder {
+  height: 100vh;
+  background-color: #fa0;
+}
+
+@media (max-width: 992px) {
+  /* 手機版套用的 logo 樣式  */
+  .logo {
+    padding: 14px 0;
+  }
+
+  /* 漢堡選單手機版顯示 */
+  .btn-menu {
+    display: block;
+    border: 1px solid var(--color-neutral-700); /* 手機版漢堡選單有一個外框 */
+    border-radius: 50%; /* 使外框變成圓形  */
+  }
+
+  /* 
+    手機版主導覽列預設為收合狀態。
+    點擊選單按鈕後，透過加入 active class 切換為展開狀態。
+  */
+  .nav-list {
+    opacity: 0; /* 讓內容透明，但元素本身仍會佔據版面空間 */
+    max-height: 0px; /* 將高度收合為 0，避免元素佔據垂直空間 */
+    display: flex; /* 顯示導覽列，並啟用 flex 排版 */
+    flex-direction: column; /* 手機版選單項目改為垂直排列 */
+    align-items: center; /* ✨ 讓裡面的文字選項置中 */
+    overflow: hidden; /* 隱藏超出 max-height 範圍的內容 */
+    width: 100%; /* 讓導覽列寬度佔滿父層，搭配 flex-wrap 使其換行顯示 */
+    text-align: center;
+
+    /* ✨✨✨ 改成絕對定位的方式*/
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background-color: var(--color-primary-50); /* ✨ 設定背景底色 */
+    transition: all 0.3s ease-in-out; /* 統一過渡動畫速度 */
+  }
+
+  /* 第一個選單項目增加上方間距 */
+  .nav-list li:first-child {
+    padding-top: 12px;
+  }
+
+  /* 最後一個選單項目增加下方間距 */
+  .nav-list li:last-child {
+    padding-bottom: 12px;
+  }
+
+  /* 主導覽列展開狀態 */
+  .nav-list.active {
+    opacity: 1; /* 讓內容顯示出來 */
+    max-height: calc(100vh - 68px); /* 展開導覽列高度 */
+    /*display: flex;*/ /* 顯示導覽列，並啟用 flex 排版 */
+    /*flex-direction: column;*/ /* 手機版選單項目改為垂直排列 */
+    /*text-align: center;*/
+    transition:
+      opacity 0.3s ease-in,
+      max-height 0.3s ease-in; /* 加入淡入與展開動畫 */
+  }
+}

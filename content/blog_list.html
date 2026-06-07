@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../static/reset.css" />
+    <link rel="stylesheet" href="../static/base.css" />
+    <link rel="stylesheet" href="../static/header.css" />
+    <link rel="stylesheet" href="../static/blog.css" />
+    <title>部落格文章列表 - Blog List</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="col-12">
+            <div class="d-flex flex-wrap align-items-center">
+              <a class="logo" href="blog_list.html">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-pc.svg"
+                  alt="Nelson"
+                />
+              </a>
+              <button class="btn-menu ml-auto" type="button">
+                <span class="material-symbols-outlined">dehaze</span>
+              </button>
+              <ul class="nav-list label-md d-flex gap-24 ml-auto">
+                <li><a class="nav-link" href="#">服務項目</a></li>
+                <li><a class="nav-link" href="#">專案作品</a></li>
+                <li><a class="nav-link" href="..\blog.html">部落格</a></li>
+                <li><a class="nav-link" href="#">與我聯絡</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="d-flex gap-24 py-80">
+        <div class="col-2">
+          <nav class="pr-16">
+            <ul
+              class="tab-list heading-xxs"
+              style="display: flex; flex-direction: column; gap: 8px"
+            >
+              <li class="tab-item active">
+                <a class="tab-link" href="#" style="border-radius: 4px">全部</a>
+              </li>
+              <li class="tab-item">
+                <a class="tab-link" href="#">品牌設計</a>
+              </li>
+              <li class="tab-item">
+                <a class="tab-link" href="#">平面設計</a>
+              </li>
+              <li class="tab-item">
+                <a class="tab-link" href="#">UIUX 設計</a>
+              </li>
+              <li class="tab-item">
+                <a class="tab-link" href="#">網頁設計</a>
+              </li>
+              <li class="tab-item">
+                <a class="tab-link" href="#">設計規範</a>
+              </li>
+              <li class="tab-item">
+                <a class="tab-link" href="#">前端技術</a>
+              </li>
+              <li class="tab-item">
+                <a class="tab-link" href="#">後端架構</a>
+              </li>
+              <li class="tab-item">
+                <a class="tab-link" href="#">AI 趨勢應用</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-10">
+          <ul class="card-list">
+            <li
+              class="card"
+              style="
+                margin-bottom: 40px;
+                border-bottom: 1px solid #f0f0f0;
+                padding-bottom: 24px;
+              "
+            >
+              <div class="card-header" style="max-width: 300px; flex-shrink: 0">
+                <a href="micro-interactions-consulting-website.html">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_1.png?raw=true"
+                    alt="網頁裡的微互動藝術：利用 CSS 與 JS 動畫為諮詢網站注入靈魂並提升用戶轉化率"
+                    style="
+                      border-radius: 8px;
+                      width: 100%;
+                      height: auto;
+                      object-fit: cover;
+                    "
+                  />
+                </a>
+              </div>
+              <div class="card-body" style="padding-left: 24px">
+                <p
+                  class="paragraph-md"
+                  style="color: var(--color-primary-500); margin-bottom: 8px"
+                >
+                  <span>UIUX 設計</span><span>・</span><span>網頁設計</span
+                  ><span>・</span><span>前端技術</span><
+                </p>
+                <h2 class="heading-sm" style="margin-bottom: 12px">
+                  <a
+                    href="micro-interactions-consulting-website.html"
+                    style="
+                      color: var(--color-neutral-900);
+                      text-decoration: none;
+                      hover: underline;
+                    "
+                    >網頁裡的微互動藝術：利用 CSS 與 JS
+                    動畫為諮詢網站注入靈魂並提升用戶轉化率</a
+                  >
+                </h2>
+                <p
+                  class="paragraph-sm"
+                  style="color: var(--color-neutral-500); margin-bottom: 16px"
+                >
+                  從按鈕回饋、滾動節奏到表單提示，拆解微互動如何讓諮詢網站更有信任感與行動力。
+                </p>
+                <div
+                  class="paragraph-sm d-flex"
+                  style="color: var(--color-neutral-500)"
+                >
+                  <time datetime="2022-10-16">Oct 16, 2022</time>
+                  <div class="d-flex ml-auto gap-12">
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >visibility</span
+                      >
+                      <span>110 views</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >share</span
+                      >
+                      <span>2 shares</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="card"
+              style="
+                margin-bottom: 40px;
+                border-bottom: 1px solid #f0f0f0;
+                padding-bottom: 24px;
+              "
+            >
+              <div class="card-header" style="max-width: 300px; flex-shrink: 0">
+                <a href="design-system-with-figma-storybook.html">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_2.png?raw=true"
+                    alt="10年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統"
+                    style="
+                      border-radius: 8px;
+                      width: 100%;
+                      height: auto;
+                      object-fit: cover;
+                    "
+                  />
+                </a>
+              </div>
+              <div class="card-body" style="padding-left: 24px">
+                <p
+                  class="paragraph-md"
+                  style="color: var(--color-primary-500); margin-bottom: 8px"
+                >
+                  <span>UIUX 設計</span><span>・</span><span>設計規範</span
+                  ><span>・</span><span>前端技術</span><
+                </p>
+                <h2 class="heading-sm" style="margin-bottom: 12px">
+                  <a
+                    href="design-system-with-figma-storybook.html"
+                    style="
+                      color: var(--color-neutral-900);
+                      text-decoration: none;
+                      hover: underline;
+                    "
+                    >10年職人手記：如何運用 Figma 與 Storybook
+                    打造美感與邏輯兼具的企業級設計系統</a
+                  >
+                </h2>
+                <p
+                  class="paragraph-sm"
+                  style="color: var(--color-neutral-500); margin-bottom: 16px"
+                >
+                  從設計
+                  token、元件規格到前端文件化，整理設計系統如何成為團隊協作的共同語言。
+                </p>
+                <div
+                  class="paragraph-sm d-flex"
+                  style="color: var(--color-neutral-500)"
+                >
+                  <time datetime="2022-10-15">Oct 15, 2022</time>
+                  <div class="d-flex ml-auto gap-12">
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >visibility</span
+                      >
+                      <span>110 views</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >share</span
+                      >
+                      <span>2 shares</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="card"
+              style="
+                margin-bottom: 40px;
+                border-bottom: 1px solid #f0f0f0;
+                padding-bottom: 24px;
+              "
+            >
+              <div class="card-header" style="max-width: 300px; flex-shrink: 0">
+                <a href="brand-identity-to-digital-experience.html">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_3.png?raw=true"
+                    alt="從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯"
+                    style="
+                      border-radius: 8px;
+                      width: 100%;
+                      height: auto;
+                      object-fit: cover;
+                    "
+                  />
+                </a>
+              </div>
+              <div class="card-body" style="padding-left: 24px">
+                <p
+                  class="paragraph-md"
+                  style="color: var(--color-primary-500); margin-bottom: 8px"
+                >
+                  <span>品牌設計</span><span>・</span><span>平面設計</span
+                  ><span>・</span><span>UIUX 設計</span><
+                </p>
+                <h2 class="heading-sm" style="margin-bottom: 12px">
+                  <a
+                    href="brand-identity-to-digital-experience.html"
+                    style="
+                      color: var(--color-neutral-900);
+                      text-decoration: none;
+                      hover: underline;
+                    "
+                    >從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯</a
+                  >
+                </h2>
+                <p
+                  class="paragraph-sm"
+                  style="color: var(--color-neutral-500); margin-bottom: 16px"
+                >
+                  以植物品牌為例，拆解平面識別如何延伸到網站介面、互動節奏與購物體驗。
+                </p>
+                <div
+                  class="paragraph-sm d-flex"
+                  style="color: var(--color-neutral-500)"
+                >
+                  <time datetime="2022-10-14">Oct 14, 2022</time>
+                  <div class="d-flex ml-auto gap-12">
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >visibility</span
+                      >
+                      <span>110 views</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >share</span
+                      >
+                      <span>2 shares</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="card"
+              style="
+                margin-bottom: 40px;
+                border-bottom: 1px solid #f0f0f0;
+                padding-bottom: 24px;
+              "
+            >
+              <div class="card-header" style="max-width: 300px; flex-shrink: 0">
+                <a href="ai-interface-design-workflow.html">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_4.png?raw=true"
+                    alt="當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力"
+                    style="
+                      border-radius: 8px;
+                      width: 100%;
+                      height: auto;
+                      object-fit: cover;
+                    "
+                  />
+                </a>
+              </div>
+              <div class="card-body" style="padding-left: 24px">
+                <p
+                  class="paragraph-md"
+                  style="color: var(--color-primary-500); margin-bottom: 8px"
+                >
+                  <span>UIUX 設計</span><span>・</span><span>前端技術</span
+                  ><span>・</span><span>AI 趨勢應用</span><
+                </p>
+                <h2 class="heading-sm" style="margin-bottom: 12px">
+                  <a
+                    href="ai-interface-design-workflow.html"
+                    style="
+                      color: var(--color-neutral-900);
+                      text-decoration: none;
+                      hover: underline;
+                    "
+                    >當 AI
+                    遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力</a
+                  >
+                </h2>
+                <p
+                  class="paragraph-sm"
+                  style="color: var(--color-neutral-500); margin-bottom: 16px"
+                >
+                  從像素到程式碼，探討 AI
+                  如何成為數位職人的最強外掛，在美學與邏輯的交界處創造全新價值。
+                </p>
+                <div
+                  class="paragraph-sm d-flex"
+                  style="color: var(--color-neutral-500)"
+                >
+                  <time datetime="2022-10-13">Oct 13, 2022</time>
+                  <div class="d-flex ml-auto gap-12">
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >visibility</span
+                      >
+                      <span>110 views</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >share</span
+                      >
+                      <span>2 shares</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="card"
+              style="
+                margin-bottom: 40px;
+                border-bottom: 1px solid #f0f0f0;
+                padding-bottom: 24px;
+              "
+            >
+              <div class="card-header" style="max-width: 300px; flex-shrink: 0">
+                <a href="open-bank-api-product-design.html">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_5.png?raw=true"
+                    alt="揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性"
+                    style="
+                      border-radius: 8px;
+                      width: 100%;
+                      height: auto;
+                      object-fit: cover;
+                    "
+                  />
+                </a>
+              </div>
+              <div class="card-body" style="padding-left: 24px">
+                <p
+                  class="paragraph-md"
+                  style="color: var(--color-primary-500); margin-bottom: 8px"
+                >
+                  <span>前端技術</span><span>・</span><span>後端架構</span
+                  ><span>・</span><span>AI 趨勢應用</span><
+                </p>
+                <h2 class="heading-sm" style="margin-bottom: 12px">
+                  <a
+                    href="open-bank-api-product-design.html"
+                    style="
+                      color: var(--color-neutral-900);
+                      text-decoration: none;
+                      hover: underline;
+                    "
+                    >揭開金融 App 的設計密碼：如何優化 Open Bank API
+                    的複雜數據呈現與後端串接安全性</a
+                  >
+                </h2>
+                <p
+                  class="paragraph-sm"
+                  style="color: var(--color-neutral-500); margin-bottom: 16px"
+                >
+                  從資料視覺化、API 串接到安全感設計，拆解金融 App
+                  如何把複雜資訊轉成可信任體驗。
+                </p>
+                <div
+                  class="paragraph-sm d-flex"
+                  style="color: var(--color-neutral-500)"
+                >
+                  <time datetime="2022-10-12">Oct 12, 2022</time>
+                  <div class="d-flex ml-auto gap-12">
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >visibility</span
+                      >
+                      <span>110 views</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="material-symbols-outlined mr-4"
+                        style="font-size: 16px"
+                        >share</span
+                      >
+                      <span>2 shares</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

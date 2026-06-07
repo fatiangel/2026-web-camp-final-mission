@@ -1,0 +1,6 @@
+/* 全域通用設定 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

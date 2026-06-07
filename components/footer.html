@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="..\static\footer.css" />
+    <title>Block footer</title>
+  </head>
+  <body>
+    <!-- 頁尾區域 -->
+    <footer class="bg-primary-900 py-80 py-md-40">
+      <div class="container">
+        <div class="d-flex gap-24 text-neutral-0 flex-md-col">
+          <div class="col-5 col-md-12">
+            <!-- 標題 -->
+            <h2 class="mb-24 mb-md-12">
+              <span class="d-block heading-xxxs heading-mobile-xxxxs"
+                >與我聯絡</span
+              >
+              <span class="d-block heading-xxxl">CONTACT</span>
+            </h2>
+
+            <!-- 內文 -->
+            <p class="paragraph-md paragraph-mobile-sm mb-92 mb-md-24">
+              <span class="d-block mb-4 mb-md-0"
+                >若有數位產品設計和開發相關問題</span
+              >
+              <span class="d-block">歡迎填寫表單 或 直接與我聯絡！</span>
+            </p>
+            <!-- social icon -->
+            <div class="d-flex line-height-1 text-24 mb-24 gap-12 d-md-none">
+              <i class="bi bi-instagram p-12 btn-outline rounded-circle"></i>
+              <i class="bi bi-line p-12 btn-outline rounded-circle"></i>
+              <i class="bi bi-linkedin p-12 btn-outline rounded-circle"></i>
+            </div>
+
+            <!-- 信箱資訊 -->
+            <div class="d-flex d-md-none gap-8">
+              <span class="material-symbols-outlined text-24"> drafts </span>
+              <p class="paragraph-md">service@hexschool.com</p>
+            </div>
+          </div>
+          <div class="col-7 col-md-12">
+            <form
+              class="paragraph-md paragraph-mobile-sm text-neutral-0 d-flex flex-wrap px-40 px-md-12 gap-24 gap-md-12"
+            >
+              <input
+                class="py-20 py-md-16 pl-32 pl-md-20 btn-outline rounded-40 rounded-md-32 focus-outline-0 bg-transparent contact-input-half w-md-full"
+                type="text"
+                placeholder="姓名"
+              />
+              <input
+                class="py-20 py-md-16 pl-32 pl-md-20 btn-outline rounded-40 rounded-md-32 focus-outline-0 bg-transparent contact-input-half"
+                type="tel"
+                placeholder="手機號碼"
+              />
+              <input
+                class="py-20 py-md-16 pl-32 pl-md-20 btn-outline rounded-40 rounded-md-32 focus-outline-0 bg-transparent w-full"
+                type="email"
+                placeholder="電子信箱"
+              />
+              <textarea
+                placeholder="備註"
+                rows="4"
+                class="py-20 py-md-16 pl-32 pl-md-20 btn-outline rounded-40 rounded-md-32 focus-outline-0 bg-transparent w-full"
+              ></textarea>
+              <button
+                type="button"
+                class="btn-reset bg-neutral-0 text-neutral-700 py-12 w-full rounded-full"
+              >
+                送出
+              </button>
+            </form>
+          </div>
+          <!-- 手機版使用 -->
+          <div class="col-md-12 d-none d-md-block">
+            <!-- social icon -->
+            <div
+              class="d-flex line-height-1 text-24 text-md-20 mb-24 mb-md-12 gap-12"
+            >
+              <i class="bi bi-instagram p-12 p- btn-outline rounded-circle"></i>
+              <i class="bi bi-line p-12 btn-outline rounded-circle"></i>
+              <i class="bi bi-linkedin p-12 btn-outline rounded-circle"></i>
+            </div>
+            <!-- 信箱資訊 -->
+            <div class="d-flex gap-8">
+              <span class="material-symbols-outlined text-24 text-md-20">
+                drafts
+              </span>
+              <p class="paragraph-md paragraph-mobile-sm">
+                service@hexschool.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

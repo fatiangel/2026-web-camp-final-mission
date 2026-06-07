@@ -1,0 +1,12 @@
+/* footer（頁尾）區塊樣式 */
+.contact-input-half {
+  --gap: 24px;
+  width: calc((100% - var(--gap)) / 2);
+}
+
+@media (max-width: 992px) {
+  /* Footer 頁尾區塊樣式 */
+  .contact-input-half {
+    width: 100%;
+  }
+}
